@@ -1,13 +1,48 @@
+import Header from "../components/Header"
+
+
+
 function Home() {
 
   return (
-    <section>
+  <>
+      <Header />
+      <section className="hero">
+        <div className="hero-content">
 
-        <h1>Monster Energy</h1>
-        <p>Unleash The Beast</p>
+          {/* Texto pequeno acima do título */}
+          <span className="hero-tag">
+            UNLEASH THE BEAST
+          </span>
 
-      {/* Botão principal */}
-      <button>Ver Produtos</button>
-    </section>
+          {/* Título principal */}
+          <h1>Monster Energy</h1>
+
+          {/* Descrição */}
+          <p>
+            Explore todos os sabores da Monster em uma experiência moderna,
+            rápida e totalmente responsiva.
+          </p>
+
+          {/* Área dos botões */}
+          <div className="hero-buttons">
+            <button>Comprar Agora</button>
+            <button>Explorar Sabores</button>
+          </div>
+
+        </div>
+
+        {/* Lado direito: futura imagem da lata */}
+        <div className="hero-image">
+          <div className="can-placeholder">
+            Monster Can
+          </div>
+        </div>
+
+      </section>
+    </>
   )
 }
+
+
+export default Home
