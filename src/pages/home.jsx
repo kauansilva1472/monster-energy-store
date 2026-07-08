@@ -29,6 +29,12 @@ const sabores = [
     descricao: "O sabor mais refrescante da linha Ultra, com um toque de limão e uma experiência de energia pura.",
     imagem: ultraWhite,
     cor: "#f5f5f5"
+  },
+  {
+      nome: "Ultra White",
+    descricao: "O sabor mais refrescante da linha Ultra, com um toque de limão e uma experiência de energia pura.",
+    imagem: ultraWhite,
+    cor: "#f5f5f5"
   }
 ];
 
