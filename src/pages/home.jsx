@@ -1,5 +1,5 @@
 import Header from "../components/Header"
-
+import monsterOriginal from "../assets/images/original.png"
 
 
 function Home() {
@@ -31,13 +31,11 @@ function Home() {
           </div>
 
         </div>
-
-        {/* Lado direito: futura imagem da lata */}
-        <div className="hero-image">
-          <div className="can-placeholder">
-            Monster Can
-          </div>
-        </div>
+        <img
+        className="hero-can"
+        src={monsterOriginal}
+        alt="Monster Energy Original"
+        />
 
       </section>
     </>
