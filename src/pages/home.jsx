@@ -30,12 +30,6 @@ const sabores = [
     imagem: ultraWhite,
     cor: "#f5f5f5"
   },
-  {
-      nome: "Ultra White",
-    descricao: "O sabor mais refrescante da linha Ultra, com um toque de limão e uma experiência de energia pura.",
-    imagem: ultraWhite,
-    cor: "#f5f5f5"
-  }
 ];
 
 function Home() {
@@ -54,27 +48,28 @@ function Home() {
           </span>
 
           {/* Título principal */}
-          <h1>Monster Energy</h1>
+          <h1>{saborAtual.nome}</h1>
 
           {/* Descrição */}
-          <p>
-            Explore todos os sabores da Monster em uma experiência moderna,
-            rápida e totalmente responsiva.
-          </p>
+          <p>{saborAtual.descricao}</p>
 
           {/* Área dos botões */}
           <div className="hero-buttons">
             <button>Comprar Agora</button>
             <button>Explorar Sabores</button>
+            <button onClick={() => setSaborAtual(sabores[0])}>Original</button>
+            <button onClick={() => setSaborAtual(sabores[1])}>Mango Loco</button>
+            <button onClick={() => setSaborAtual(sabores[2])}>Pipeline Punch</button>
+            <button onClick={() => setSaborAtual(sabores[3])}>Ultra White</button>
           </div>
-
+          </div>
+            <div className="hero-image">
+          <img
+            className="hero-can"
+            src={saborAtual.imagem}
+            alt={`Lata Monster Energy ${saborAtual.nome}`}
+          />
         </div>
-        <img
-        className="hero-can"
-        src={monsterOriginal}
-        alt="Monster Energy Original"
-        />
-
       </section>
     </>
   )
